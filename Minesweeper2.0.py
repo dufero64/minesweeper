@@ -2,8 +2,8 @@ import pygame
 import random
 
 pygame.init()
-MIN_SIZE = 10
-MAX_SIZE = 20
+MIN_SIZE = 12
+MAX_SIZE = 16
 CELL_SIZE = 30
 
 def get_board_size():
@@ -31,7 +31,7 @@ GRAY = (200, 200, 200)
 
 def create_grid():
     grid = [[Cell(row, col) for col in range(GRID_SIZE)] for row in range(GRID_SIZE)]
-MINE_COUNT = 20
+MINE_COUNT = 30
 remaining_mines = MINE_COUNT  
 start_time = pygame.time.get_ticks()  
 final_time = None 
